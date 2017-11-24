@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://192.168.118.250:3306/petshop</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping class="com.upa.petshop_intern.entity.Auth"/>
+      <mapping class="com.upa.petshop_intern.entity.Role"/>
+      <mapping class="com.upa.petshop_intern.entity.User"/>
+      <mapping class="com.upa.petshop_intern.entity.UserAuth"/>
+      <mapping class="com.upa.petshop_intern.entity.UserLoginLog"/>
+      <mapping class="com.upa.petshop_intern.entity.UserNonce"/>
+      <mapping class="com.upa.petshop_intern.entity.UserRole"/>
+      <mapping class="com.upa.petshop_intern.entity.UserToken"/>
+      <mapping class="com.upa.petshop_intern.entity.RoleAuth"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

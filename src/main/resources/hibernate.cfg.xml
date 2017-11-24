@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://192.168.118.250:3306/petshop</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping class="com.upa.petshop_intern.entity.Auth"/>
+    <mapping class="com.upa.petshop_intern.entity.Role"/>
+    <mapping class="com.upa.petshop_intern.entity.User"/>
+    <mapping class="com.upa.petshop_intern.entity.UserRole"/>
+    <mapping class="com.upa.petshop_intern.entity.RoleAuth"/>
+    <mapping class="com.upa.petshop_intern.entity.Category"/>
+    <mapping class="com.upa.petshop_intern.entity.Commodity"/>
+    <mapping class="com.upa.petshop_intern.entity.CommodityCategory"/>
+    <mapping class="com.upa.petshop_intern.entity.CommodityImage"/>
+    <mapping class="com.upa.petshop_intern.entity.LoginRecord"/>
+    <mapping class="com.upa.petshop_intern.entity.VerifyRecord"/>
+    <mapping class="com.upa.petshop_intern.entity.UserToken"/>
+    <mapping class="com.upa.petshop_intern.entity.UserNonce"/>
+    <mapping class="com.upa.petshop_intern.entity.CommodityStore"/>
+    <mapping class="com.upa.petshop_intern.entity.ImageStore"/>
+      <mapping class="com.upa.petshop_intern.entity.UserImage"/>
+      <mapping class="com.upa.petshop_intern.entity.Custom"/>
+      <mapping class="com.upa.petshop_intern.entity.CustomImage"/>
+      <mapping class="com.upa.petshop_intern.entity.CustomRole"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
